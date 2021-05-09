@@ -33,7 +33,7 @@ module "aforo255-cluster-dero" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = "aforo255-cluster-dero"
   cluster_version = "1.17"
-  subnets         = ["subnet-c64a7dc8", "subnet-ec077a8a"]  #CHANGE # Donot choose subnet from us-east-1e
+  subnets         = ["subnet-b2532b93", "subnet-e31b65bc"]  #CHANGE # Donot choose subnet from us-east-1e
   #subnets = data.aws_subnet_ids.subnets.ids
   vpc_id          = aws_default_vpc.default.id
   #vpc_id         = "vpc-1234556abcdef"
